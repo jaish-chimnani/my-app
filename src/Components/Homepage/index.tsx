@@ -1,5 +1,6 @@
-import { Award, Briefcase, Code, Download, Github, GraduationCap, Linkedin, Mail, Menu, Phone, Star, TrendingUp, User, X } from 'lucide-react'; // Import Sun and Moon icons
+import { Award, Briefcase, Code, Download, Github, GraduationCap, Linkedin, Mail, Menu, Phone, Star, TrendingUp, X } from 'lucide-react'; // Import Sun and Moon icons
 import { useEffect, useState } from 'react';
+import image from "../../assets/profile.jpeg";
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -217,8 +218,9 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                <User size={48} className="text-white" />
+              <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-purple-600 !rounded-full overflow-hidden flex items-center justify-center">
+                <img src={image} alt="" />
+                {/* <User size={48} className="text-white" /> */}
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-4">
                 Jaish Chimnani
