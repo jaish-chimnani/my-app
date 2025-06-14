@@ -1,4 +1,14 @@
-@import "tailwindcss";
-body {
-    /* font-family: 'JetBrains Mono', monospace; */
-  }
+/* index.css or App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these lines to set a default background for dark mode */
+html.dark {
+  background-color: #1a202c; /* A dark gray, adjust as needed */
+}
+
+/* You might want to override default text color for non-tailwind elements if any */
+html.dark body {
+  color: #edf2f7; /* A light gray for text */
+}
