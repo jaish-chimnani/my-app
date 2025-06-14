@@ -14,7 +14,7 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId:string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -30,91 +30,57 @@ const Portfolio = () => {
       location: "Haryana, India",
       period: "2024 – Present",
       highlights: [
-        "Architected and developed a CRM tool using Micro-Frontend Architecture with Module Federation, reducing feature delivery time by 30% across teams",
-        "Created and maintained a shared UI component library, improving reusability and reducing redundant code by 40%",
-        "Integrated RESTful APIs in a real estate portal managing tickets, approvals, and assets, improving operational response time by 25%",
-        "Spearheaded frontend optimization using code-splitting and lazy loading, decreasing initial load time by 45%",
-        "Collaborated with backend and QA teams to deliver scalable and maintainable features, reducing post-deployment bugs by 35%"
+        "Leading backend development for various Small Medium Enterprise Insurance solutions",
+        "Led strategic business discussions and project planning, ensuring quality assurance",
+        "Developed user-friendly interfaces and optimized application performance"
       ]
     },
     {
       title: "Software Engineer L1",
       company: "Gemini Solutions Pvt. Ltd.",
       location: "Haryana, India",
-      period: "Apr 2023 – Apr 2024",
+      period: "04/2023 – 04/2024",
       highlights: [
-        "Developed an internal ticketing portal using React, Redux, and MUI, improving service request tracking and reducing resolution time by 20%",
-        "Built a microsite for an insurance product using Vite and React Redux with payment integration and form validation, leading to a 15% increase in conversion rates",
-        "Designed reusable, responsive UI components with Material-UI and Tailwind CSS, reducing UI development time by 30%",
-        "Implemented business-driven UI enhancements and collaborated with stakeholders to ensure delivery within sprint timelines",
-        "Contributed to improved DX by adopting Vite, cutting build time by over 50%"
+        "Built customizable admin dashboard with role-based access control (RBAC)",
+        "Reduced initial load time by 45% using lazy loading and code-splitting",
+        "Transitioned to monorepo architecture, reducing build time by 50%",
+        "Improved API response times, reducing latency by 50ms per request"
       ]
     }
   ];
 
   const projects = [
-  {
-    title: "Resource Management Portal",
-    year: "2024",
-    description: "Developed a comprehensive web portal for a large enterprise, streamlining operations across various departments. This system centralized crucial management functions, including ticket handling, approval workflows, and asset tracking, significantly improving organizational efficiency.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Material UI", "HTML5", "CSS"],
-    highlights: [
-      "Engineered a highly modular architecture by building reusable shared components, enhancing maintainability and speeding up future development cycles.",
-      "Successfully optimized the application for peak performance and resolved critical bugs, leading to a more stable and reliable system for end-users."
-    ]
-  },
-  {
-    title: "Custom Relationship Management System",
-    year: "2023",
-    description: "Designed and implemented an internal CRM solution to manage client interactions, meeting schedules, and audit processes. This system was vital for tracking complex policy information and various business logics for a major client, enhancing internal data management.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Material-UI", "Node.js", "Module Federation"],
-    highlights: [
-      "Pioneered the adoption of a Micro-Frontend Architecture using module federation, significantly improving development scalability and team collaboration.",
-      "Established a centralized shared component repository, providing consistent and reusable UI elements across multiple associated projects."
-    ]
-  },
-  {
-    title: "Specialized E-commerce Platform",
-    year: "2022",
-    description: "Created an e-commerce platform tailored for a niche market, incorporating advanced features beyond standard shopping functionalities. The platform included unique capabilities such as media broadcasting and integrated messaging services, providing a richer user experience.",
-    technologies: ["React", "JavaScript", "HTML/CSS"],
-    highlights: [
-      "Developed highly responsive UI components, ensuring seamless user experience across devices, while implementing performance optimizations like code splitting and lazy loading.",
-      "Integrated efficient API solutions to support dynamic content and interactive features, ensuring smooth data flow and enhanced functionality."
-    ]
-  }
-];
-  // const projects = [
-  //   {
-  //     title: "Emaar (Real Estate Development Company)",
-  //     year: "2024",
-  //     description: "Connect Now 2.0 - A portal to manage different types of management systems like ticket management systems, approval management system, asset management systems",
-  //     technologies: ["React", "Tailwind CSS", "Material UI", "HTML5", "CSS", "TypeScript"],
-  //     highlights: [
-  //       "Built reusable shared components to improve modularity and maintainability across different sections",
-  //       "Optimized application performance and resolved bugs to enhance system stability and reliability"
-  //     ]
-  //   },
-  //   {
-  //     title: "TATA AIG ONECRM",
-  //     year: "2023",
-  //     description: "Internal project for client to manage their internal meetings and audit; consists of different types of tracking management systems for all their policies and logics",
-  //     technologies: ["React", "Tailwind CSS", "Material-UI", "HTML/CSS", "Node.js", "TypeScript"],
-  //     highlights: [
-  //       "Created project using TypeScript from scratch and implemented Micro-Frontend Architecture using module federation approach",
-  //       "Created a shared component repo which gave access to different shared components across mono repos"
-  //     ]
-  //   },
-  //   {
-  //     title: "Sharemeister (Athletic Estate)",
-  //     year: "2022",
-  //     description: "E-commerce website for sportswear with functionalities like media broadcasting and messaging",
-  //     technologies: ["React", "JavaScript", "HTML/CSS"],
-  //     highlights: [
-  //       "Implemented responsive UI components optimizing performance through code splitting, lazy loading and efficient API integrations"
-  //     ]
-  //   }
-  // ];
+    {
+      title: "Ticketing Based Management System (A Real Rstate Company)",
+      year: "2024",
+      description: "Connect Now 2.0 - A comprehensive portal managing ticket systems, approval workflows, and asset management",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Material UI", "HTML5", "CSS"],
+      highlights: [
+        "Built reusable shared components for improved modularity",
+        "Optimized performance and enhanced system stability"
+      ]
+    },
+    {
+      title: "Customer Relationship Management System",
+      year: "2023",
+      description: "Internal CRM system for managing meetings, audits, and policy tracking",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Material-UI", "Node.js"],
+      highlights: [
+        "Implemented Micro-Frontend Architecture using module federation",
+        "Created shared component repository for mono repos"
+      ]
+    },
+    {
+      title: "A E-commerce website",
+      year: "2022",
+      description: "E-commerce platform for sportswear with media broadcasting and messaging features",
+      technologies: ["React", "JavaScript", "HTML/CSS"],
+      highlights: [
+        "Implemented responsive UI with performance optimization",
+        "Integrated efficient API solutions"
+      ]
+    }
+  ];
 
   const skills = {
     primary: ["React.js", "TypeScript", "JavaScript (ES6+)", "Next.js", "Redux Toolkit", "React Query", "Context API", "Tailwind CSS", "HTML5", "CSS3"],
@@ -123,30 +89,82 @@ const Portfolio = () => {
 
   const achievements = [
     {
-      title: "Performance Optimization",
-      description: "Decreased initial application load time by 45% using code-splitting and lazy loading.",
-      metric: "45% faster load time",
+      title: "Performance Optimization Expert",
+      description: "Reduced application load time by 45% through lazy loading and code-splitting techniques",
+      metric: "45% improvement",
       icon: TrendingUp
     },
     {
-      title: "Architecture & Reusability",
-      description: "Implemented Micro-Frontend Architecture and created a shared UI component library, reducing feature delivery time by 30% and code redundancy by 40%.",
-      metric: "Modular & efficient code",
+      title: "Build Process Enhancement",
+      description: "Transitioned to monorepo architecture, cutting build time in half",
+      metric: "50% faster builds",
       icon: Award
     },
     {
-      title: "Build Process Improvement",
-      description: "Contributed to improved Developer Experience (DX) by adopting Vite, cutting build time by over 50%.",
-      metric: "50% faster builds",
-      icon: Code
+      title: "API Performance Specialist",
+      description: "Optimized API response times, improving user experience significantly",
+      metric: "50ms latency reduction",
+      icon: Star
     },
     {
-      title: "Operational Efficiency",
-      description: "Integrated RESTful APIs in a real estate portal, improving operational response time by 25%.",
-      metric: "25% faster operations",
-      icon: Star
+      title: "Team Leadership",
+      description: "Leading strategic business discussions and end-to-end project planning",
+      metric: "Cross-functional collaboration",
+      icon: User
     }
   ];
+
+  // const testimonials = [
+  //   {
+  //     name: "Senior Project Manager",
+  //     role: "Gemini Solutions",
+  //     content: "Jaish consistently delivers high-quality solutions and has been instrumental in leading our frontend architecture decisions. His expertise in React and TypeScript has significantly improved our development velocity.",
+  //     rating: 5
+  //   },
+  //   {
+  //     name: "Technical Lead",
+  //     role: "Development Team",
+  //     content: "Working with Jaish on the TATA AIG project was exceptional. His implementation of micro-frontend architecture and shared component systems showed deep technical understanding and forward-thinking approach.",
+  //     rating: 5
+  //   },
+  //   {
+  //     name: "Product Owner",
+  //     role: "Emaar Project",
+  //     content: "Jaish's ability to translate business requirements into technical solutions is remarkable. The Connect Now 2.0 portal exceeded our expectations in terms of both functionality and user experience.",
+  //     rating: 5
+  //   }
+  // ];
+
+  // const blogPosts = [
+  //   {
+  //     title: "Micro-Frontend Architecture: A Practical Guide",
+  //     excerpt: "Deep dive into implementing micro-frontend architecture using module federation, based on real-world experience with enterprise applications.",
+  //     date: "2024-03-15",
+  //     readTime: "8 min read",
+  //     tags: ["React", "Architecture", "Micro-frontends"]
+  //   },
+  //   {
+  //     title: "Performance Optimization in React Applications",
+  //     excerpt: "Comprehensive guide to reducing load times and improving user experience through lazy loading, code splitting, and efficient state management.",
+  //     date: "2024-02-28",
+  //     readTime: "12 min read",
+  //     tags: ["React", "Performance", "Optimization"]
+  //   },
+  //   {
+  //     title: "Building Scalable Component Libraries",
+  //     excerpt: "Best practices for creating reusable component libraries that scale across multiple projects and teams in large organizations.",
+  //     date: "2024-01-20",
+  //     readTime: "10 min read",
+  //     tags: ["React", "Components", "TypeScript"]
+  //   },
+  //   {
+  //     title: "Modern State Management Patterns",
+  //     excerpt: "Exploring different state management approaches from Context API to Redux Toolkit, and when to use each pattern effectively.",
+  //     date: "2024-01-05",
+  //     readTime: "15 min read",
+  //     tags: ["React", "State Management", "Redux"]
+  //   }
+  // ];
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
@@ -157,10 +175,10 @@ const Portfolio = () => {
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               JC
             </div>
-
+            
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6">
-              {['about', 'experience', 'projects', 'skills', 'achievements', 'contact'].map((section) => (
+              {['about', 'experience', 'projects', 'skills', 'achievements', 'testimonials', 'blog', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -185,7 +203,7 @@ const Portfolio = () => {
           {/* Mobile Navigation */}
           {isMenuOpen && (
             <div className="md:hidden pb-4">
-              {['about', 'experience', 'projects', 'skills', 'achievements', 'contact'].map((section) => (
+              {['about', 'experience', 'projects', 'skills', 'achievements', 'testimonials', 'blog', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -214,7 +232,9 @@ const Portfolio = () => {
                 Senior React Developer & Frontend Engineer
               </p>
               <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-                Frontend Engineer with over 3 years of experience building performant, scalable web applications. Proficient in modern technologies including React, TypeScript, Redux Toolkit, and Tailwind CSS. Experienced in developing reusable component libraries, integrating APIs, and working in Agile environments. Proven track record of improving performance, enhancing UI/UX, and reducing technical debt across enterprise-scale projects.
+                Passionate Software Engineer with 3+ years of experience crafting exceptional user experiences. 
+                Specialized in React.js, TypeScript, and modern frontend technologies. Leading backend development 
+                and strategic business discussions while maintaining a focus on quality and performance optimization.
               </p>
             </div>
 
@@ -223,21 +243,15 @@ const Portfolio = () => {
                 <Mail size={20} />
                 Get In Touch
               </a>
-              {/* Assuming you'll have a resume.pdf in your public folder or a specific path */}
-              <a 
-              target='_blank'
-                href="https://drive.google.com/file/d/1CvQQyzlUI_U9v2J_exHBy6kB1qzrrLYb/view?usp=drive_link" 
-                download="Jaish_Chimnani_Resume.pdf" 
-                className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors"
-              >
+              <button className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
                 <Download size={20} />
                 Download Resume
-              </a>
-              <a target='_blank' rel='noopener noreferrer' href="https://www.linkedin.com/in/jaish-chimnani/" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
+              </button>
+              <a target='_blank' href="https://www.linkedin.com/in/jaish-chimnani/" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
                 <Linkedin size={20} />
                 LinkedIn
               </a>
-              <a target='_blank' rel='noopener noreferrer' href="https://github.com/jaish-chimnani" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
+              <a target='_blank' href="https://github.com/jaish-chimnani" className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
                 <Github size={20} />
                 GitHub
               </a>
@@ -314,7 +328,7 @@ const Portfolio = () => {
                     {project.year}
                   </span>
                 </div>
-
+                
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>
@@ -438,6 +452,94 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      {/* <section id="testimonials" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What Colleagues Say
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed italic">
+                  "{testimonial.content}"
+                </p>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* Blog Section */}
+      {/* <section id="blog" className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Latest Articles & Insights
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-4"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Sharing knowledge and insights about React development, architecture patterns, and modern frontend practices.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {blogPosts.map((post, index) => (
+              <article key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                  <Calendar size={16} />
+                  <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  <span>•</span>
+                  <span>{post.readTime}</span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors cursor-pointer">
+                  {post.title}
+                </h3>
+                
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {post.excerpt}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {post.tags.map((tag, idx) => (
+                    <span key={idx} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <button className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors group">
+                  <BookOpen size={16} />
+                  Read More
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </button>
+              </article>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <button className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105">
+              <BookOpen size={20} />
+              View All Articles
+            </button>
+          </div>
+        </div>
+      </section> */}
+
       {/* Contact Section */}
       <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -445,36 +547,32 @@ const Portfolio = () => {
             Let's Build Something Amazing Together
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-
+          
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            I'm always excited to work on innovative projects and collaborate with talented teams.
-            Whether you're looking for a frontend developer, need consultation on React architecture,
+            I'm always excited to work on innovative projects and collaborate with talented teams. 
+            Whether you're looking for a frontend developer, need consultation on React architecture, 
             or want to discuss opportunities, I'd love to hear from you!
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="mailto:jaishchimnani9@gmail.com"
+            <a 
+              href="mailto:jaishchimnani9@gmail.com" 
               className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
             >
               <Mail size={20} />
               Send Email
             </a>
-
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href="https://www.linkedin.com/in/jaish-chimnani/"
+            
+            <a 
+              href="https://www.linkedin.com/in/jaish-chimnani/" 
               className="flex items-center gap-3 px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all transform hover:scale-105"
             >
               <Linkedin size={20} />
               Connect on LinkedIn
             </a>
-
-            <a
-              target='_blank'
-              rel='noopener noreferrer'
-              href="https://github.com/jaish-chimnani"
+            
+            <a 
+              href="https://github.com/jaish-chimnani" 
               className="flex items-center gap-3 px-8 py-4 border-2 border-gray-600 text-gray-600 rounded-full hover:bg-gray-600 hover:text-white transition-all transform hover:scale-105"
             >
               <Github size={20} />
