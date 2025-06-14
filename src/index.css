@@ -1,14 +1,21 @@
-/* index.css or App.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Add these lines to set a default background for dark mode */
-html.dark {
-  background-color: #1a202c; /* A dark gray, adjust as needed */
+@import "tailwindcss";
+body {
+    /* font-family: 'JetBrains Mono', monospace; */
+    
+  }
+ html {
+  /* Default light theme background */
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff, #e0f2fe); /* from-slate-50 via-blue-50 to-indigo-50 */
+  color: #1f2937; /* text-gray-900 */
 }
 
-/* You might want to override default text color for non-tailwind elements if any */
-html.dark body {
-  color: #edf2f7; /* A light gray for text */
+/* Styles applied when the 'dark' class is present on HTML */
+html.dark {
+  background: linear-gradient(to bottom right, #111827, #1f2937, #0f172a); /* dark:from-gray-900 dark:via-gray-800 dark:to-slate-900 */
+  color: #f9fafb; /* dark:text-gray-100 */
+}
+
+/* Smooth transition for theme changes (optional but nice) */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
