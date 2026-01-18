@@ -1,0 +1,43 @@
+[
+  {
+    "id": "1",
+    "title": "Understanding Micro-Frontends in 2024",
+    "excerpt": "A comprehensive guide to scaling frontend applications using module federation and micro-frontend architecture.",
+    "content": "\n# Understanding Micro-Frontends\n\nMicro-frontends extend the concepts of microservices to the frontend world. The current trend is to build a feature-rich and powerful browser application, aka single page app, which sits on top of a microservice architecture. Over time the frontend layer, often developed by a separate team, grows and gets more difficult to maintain.\n\n## The Solution\n\nThe idea behind Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams. Each team has a distinct area of business or mission it cares about and specialises in.\n\n### Key Benefits\n\n1. **Incremental upgrades**: Allows you to upgrade, rewrite, or even switch frontend frameworks for individual parts of the application.\n2. **Simple, decoupled codebases**: The source code for each individual micro-frontend will be much smaller than source code of a single monolithic frontend.\n3. **Independent deployment**: Just like with microservices, independent deployability is key.\n\n## Implementation with Module Federation\n\nWebpack 5 Module Federation is one of the most popular ways to implement micro-frontends today...\n    ",
+    "date": "Jan 14, 2024",
+    "readTime": "5 min read",
+    "tags": [
+      "React",
+      "Architecture",
+      "Micro-Frontends"
+    ],
+    "author": "Jaish Chimnani"
+  },
+  {
+    "id": "2",
+    "title": "Optimizing React Performance with Vite",
+    "excerpt": "How I reduced build times by 50% and improved application performance using Vite and tailored optimizations.",
+    "content": "Content relating to Vite optimization...",
+    "date": "Dec 28, 2023",
+    "readTime": "4 min read",
+    "tags": [
+      "Vite",
+      "Performance",
+      "React"
+    ],
+    "author": "Jaish Chimnani"
+  },
+  {
+    "id": "3",
+    "title": "Mastering TypeScript Generics",
+    "excerpt": "Deep dive into advanced TypeScript patterns and how to use generics to write flexible, reusable code.",
+    "content": "Content relating to TS Generics...",
+    "date": "Nov 15, 2023",
+    "readTime": "7 min read",
+    "tags": [
+      "TypeScript",
+      "Programming"
+    ],
+    "author": "Jaish Chimnani"
+  }
+]

@@ -1,21 +1,92 @@
 @import "tailwindcss";
-body {
-    /* font-family: 'JetBrains Mono', monospace; */
-    
+
+
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Cal Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --background: 76 71% 94%;
+  /* #F5FBE6 */
+  --foreground: 203 37% 22%;
+  /* #233D4D */
+
+  --card: 0 0% 100%;
+  --card-foreground: 203 37% 22%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 203 37% 22%;
+
+  --primary: 22 99% 59%;
+  /* #FE7F2D */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 183 49% 25%;
+  /* #215E61 */
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 76 20% 90%;
+  --muted-foreground: 203 20% 40%;
+
+  --accent: 183 49% 25%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 203 20% 80%;
+  --input: 203 20% 80%;
+  --ring: 22 99% 59%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 263.4 70% 50.4%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 263.4 70% 50.4%;
+}
+
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+
+  body {
+    /* @apply bg-background text-foreground; */
+    font-feature-settings: "rlig" 1, "calt" 1;
+    min-height: 100vh;
+    scroll-behavior: smooth;
   }
- html {
-  /* Default light theme background */
-  background: linear-gradient(to bottom right, #f8fafc, #eff6ff, #e0f2fe); /* from-slate-50 via-blue-50 to-indigo-50 */
-  color: #1f2937; /* text-gray-900 */
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-/* Styles applied when the 'dark' class is present on HTML */
-html.dark {
-  background: linear-gradient(to bottom right, #111827, #1f2937, #0f172a); /* dark:from-gray-900 dark:via-gray-800 dark:to-slate-900 */
-  color: #f9fafb; /* dark:text-gray-100 */
+.glass {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl;
 }
 
-/* Smooth transition for theme changes (optional but nice) */
-html {
-  transition: background-color 0.3s ease, color 0.3s ease;
+.dark .glass {
+  @apply bg-black/10 backdrop-blur-lg border border-white/10 shadow-xl;
 }
